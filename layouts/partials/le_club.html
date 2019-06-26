@@ -1,0 +1,25 @@
+<section class="alt-section section-club">
+    {{ with .Site.Data.club.title }}<h3 id="club">{{ . }}</h3>{{ end }}
+
+    {{ with .Site.Data.club.params.about.bio_titre_ojbectifs }}
+    <div class="blurb-titre">
+        <p>{{ . | print | markdownify }}</p>
+    </div>
+    {{ end }}
+    {{ with .Site.Data.club.params.about.bio_objectifs }}
+    <div class="blurb-text">
+        <p>{{ . | print | markdownify }}</p>
+    </div>
+    {{ end }}
+
+    {{ with .Site.Data.club.params.about.bio_titre_nous_a_blois }}
+    <div class="blurb-titre">
+        <p>{{ . | print | markdownify }}</p>
+    </div>
+    {{ end }}
+    {{ with .Site.Data.club.params.about.bio_nous_a_blois }}
+    <div class="blurb-text">
+        <p>{{ . | print | markdownify }}</p>
+    </div>
+    {{ end }}
+</section>

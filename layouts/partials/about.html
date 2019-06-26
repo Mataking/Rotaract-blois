@@ -1,5 +1,5 @@
 {{ "<!-- About section -->" | safeHTML }}
-<section class="alt-section section-about">
+<section class="section-about">
 
     {{ with .Site.Params.about.title }}<h3 id="about-us">{{ . }}</h3>{{ end }}
 
@@ -43,26 +43,4 @@
     </div>
     {{ end }}
 
-
-    {{ with .Site.Params.about.bio_titre_ojbectifs }}
-    <div class="blurb-titre">
-        <p>{{ . | print | markdownify }}</p>
-    </div>
-    {{ end }}
-    {{ with .Site.Params.about.bio_objectifs }}
-    <div class="blurb-text">
-        <p>{{ . | print | markdownify }}</p>
-    </div>
-    {{ end }}
-
-    {{ with .Site.Params.about.bio_titre_nous_a_blois }}
-    <div class="blurb-titre">
-        <p>{{ . | print | markdownify }}</p>
-    </div>
-    {{ end }}
-    {{ with .Site.Params.about.bio_nous_a_blois }}
-    <div class="blurb-text">
-        <p>{{ . | print | markdownify }}</p>
-    </div>
-    {{ end }}
 </section>
